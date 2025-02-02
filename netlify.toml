@@ -1,0 +1,57 @@
+[build]
+  publish = "public" 
+
+[[builds]]
+  base = "article-preview-component-master"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "article-preview-component-master"
+
+[[builds]]
+  base = "blog-preview-card-main"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "blog-preview-card-main"
+
+[[builds]]
+  base = "four-card-feature-section-master"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "four-card-feature-section-master"
+
+[[builds]]
+  base = "meet-landing-page"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "meet-landing-page"
+
+[[builds]]
+  base = "newsletter-sign-up-with-success-message-main"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "newsletter-sign-up-with-success-message-main"
+
+[[builds]]
+  base = "product-preview-card-component-main"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "product-preview-card-component-main"
+
+[[builds]]
+  base = "qr-code-component-main"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "qr-code-component-main"
+
+[[builds]]
+  base = "recipe-page-main"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "recipe-page-main"
+
+[[builds]]
+  base = "social-links-profile-main"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "social-links-profile-main"
+
+[[builds]]
+  base = "testimonials-grid-section-main"
+  command = "cp -r * $NETLIFY_DEPLOY_DIR"
+  publish = "testimonials-grid-section-main"
+
+[[builds]]
+  base = "time-tracking-dashboard"
+  command = "npm run build"
+  publish = "time-tracking-dashboard/dist"
