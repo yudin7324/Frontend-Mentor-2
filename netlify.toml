@@ -1,6 +1,0 @@
-ignore = "git diff --name-only $CIRCLE_SHA1 $CIRCLE_PREVIOUS_SHA1 | grep -vE '^(article-preview-component-master|blog-preview-card-main|four-card-feature-section-master|meet-landing-page|newsletter-sign-up-with-success-message-main|product-preview-card-component-main|qr-code-component-main|recipe-page-main|social-links-profile-main|testimonials-grid-section-main|time-tracking-dashboard)' || exit 0"
-
-[[builds]]
-  base = "time-tracking-dashboard"
-  command = "npm run build"
-  publish = "time-tracking-dashboard/dist"
